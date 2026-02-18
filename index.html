@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Oakville Guide — Your Home in Oakville Starts Here</title>
+  <meta name="description" content="The Oakville Guide helps families find the perfect home and school in Oakville, Ontario. Neighbourhood insights, school rankings, and real estate listings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #1A2B3C;
+      --blue: #1A5276;
+      --gold: #C9A84C;
+      --cream: #FAF8F5;
+      --slate: #6B7B8D;
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--navy);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: -20%;
+      width: 140%;
+      height: 140%;
+      background: radial-gradient(ellipse at 30% 20%, rgba(26,82,118,0.06) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(201,168,76,0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .logo-mark {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--blue), var(--navy));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+      box-shadow: 0 8px 30px rgba(26,82,118,0.2);
+    }
+
+    .logo-mark span {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: white;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    h1 em {
+      font-style: normal;
+      color: var(--blue);
+    }
+
+    .tagline {
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: var(--slate);
+      max-width: 480px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      border: 1px solid #E8ECF0;
+      border-radius: 40px;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--navy);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    .badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .features {
+      display: flex;
+      gap: 32px;
+      margin-top: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .feature {
+      text-align: center;
+      max-width: 160px;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .feature-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .feature-sub {
+      font-size: 12px;
+      color: var(--slate);
+      margin-top: 2px;
+    }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      border-top: 1px solid #E8ECF0;
+      background: white;
+    }
+
+    footer p {
+      font-size: 11px;
+      color: #999;
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    footer .copyright {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--slate);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="hero">
+    <div class="logo-mark"><span>O</span></div>
+    <h1>The <em>Oakville</em> Guide</h1>
+    <p class="tagline">Neighbourhood insights, school rankings, and real estate listings — everything your family needs to find home in Oakville.</p>
+    <div class="badge">
+      <span class="dot"></span>
+      App coming soon
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🏡</div>
+        <div class="feature-label">Live Listings</div>
+        <div class="feature-sub">MLS® powered</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🏫</div>
+        <div class="feature-label">74 Schools</div>
+        <div class="feature-sub">Fraser ranked</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📍</div>
+        <div class="feature-label">Neighbourhoods</div>
+        <div class="feature-sub">Walk & transit scores</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      The listing data is provided under copyright by the Toronto Regional Real Estate Board (TRREB). The data is deemed reliable but is not guaranteed to be accurate. The trademarks MLS®, Multiple Listing Service® and the associated logos identify professional services rendered by REALTOR® members of CREA to effect the purchase, sale and lease of real estate as part of a cooperative selling system.
+    </p>
+    <p class="copyright">&copy; 2026 The Oakville Guide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
